@@ -1,0 +1,378 @@
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  padding: 10px 20px; /* Add padding to the header */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Align items to start and end */
+  align-items: center; /* Center vertically */
+}
+
+.navbar {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.navbar a {
+  color: black; /* Change the color to black */
+  text-decoration: none;
+  margin-right: 20px; /* Add margin between links */
+}
+
+.navbar a:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+
+.header img {
+  max-width: 100px; /* Adjust image size as needed */
+}
+
+.signup-link {
+  border: 1px solid black;
+  padding: 6px 18px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.language-button {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 20px;
+  margin-left: 10px;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 2px solid black;
+}
+
+.container {
+  max-width: 1200px; /* Set maximum width for the container */
+  margin: 20px auto; /* Center the container and add top margin */
+  font-family: Arial, sans-serif; /* Apply previous font */
+  color: #333; /* Apply previous font color */
+  background-color: white; /* Apply previous background color */
+}
+
+.main-content {
+  display: flex; /* Use flexbox for main content */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Add top margin to main content */
+}
+
+.main-content img {
+  max-width: 50%; /* Reduce image size */
+}
+.information {
+  padding: 0 20px; /* Add padding */
+}
+
+.information h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(196, 98, 33);
+}
+
+.information h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.information h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Services section styles */
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Gap between columns */
+  margin-bottom: 100px;
+}
+
+/* Service container styles */
+.service {
+  position: relative;
+}
+
+/* Service image styles */
+.service img {
+  width: 100%; /* Make image fill its container */
+  display: block;
+}
+
+
+/* Service image styles */
+.service img {
+  width: 50%; /* Adjust the width as needed */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  display: block;
+  margin: auto; /* Center the image horizontally */
+  margin-top: 40px;
+}
+/* Destinations section styles */
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Gap between columns */
+  margin-bottom: 50px; /* Add some bottom margin */
+  cursor: pointer;
+}
+
+/* Destination container styles */
+.destination {
+  position: relative;
+  text-align: center; /* Center the text inside the destination container */
+}
+
+/* Destination image styles */
+.destination img {
+  width: 100%; /* Make the image fill its container */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  display: block;
+  margin: auto; /* Center the image horizontally */
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+/* Destination information styles */
+/* Destination information styles */
+.info {
+  text-align: center; /* Center the content horizontally */
+}
+
+.info h3 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  margin-right: 100px; 
+}
+
+.info img {
+  width: 20px; /* Adjust the width of the image */
+  vertical-align: middle; /* Align the image vertically with text */
+  margin-right: 5px; /* Add some right margin to the image */
+}
+.info img {
+  float: left; /* Float the image to the left */
+  margin-right: 10px; /* Add some right margin to the image */
+}
+.easy-and-fast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.info {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+.subscribe-box {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.subscribe-container {
+  display: flex;
+}
+
+.subscribe-container input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-container .subscribe-button {
+  padding: 10px 20px;
+  background-color: #ee8711;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subscribe-box {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #f5f6f8;
+  border-radius: 20px;
+  border-top-left-radius: 70px;
+  background-image: url('Group\ 42.png'); /* Replace 'your-background-image.jpg' with the path to your background image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+  width: 500px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.subscribe-box input[type="email"]::placeholder {
+  text-align: center; /* Align the placeholder text to the center */
+  
+}
+.footer {
+  background-color: #ffffff; /* Choose your preferred background color */
+  color: rgb(36, 32, 32);
+  padding: 20px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-column,
+.middle-column,
+.right-column {
+  flex: 1;
+}
+
+.left-column h2 {
+  margin-bottom: 10px;
+}
+
+.middle-column ul,
+.right-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.middle-column h3,
+.right-column h3 {
+  margin-top: 20px;
+}
+
+.middle-column li,
+.right-column li {
+  margin-bottom: 10px;
+}
+
+
+
+/* Add this CSS at the end of your existing CSS */
+
+/* Media query for devices with a maximum width of 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px; /* Reduce padding in header */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: flex-start; /* Align navigation links to the start */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Adjust margin for navigation links */
+  }
+
+  .container {
+    padding: 10px; /* Add padding to container */
+  }
+
+  .main-content {
+    flex-direction: column; /* Stack main content vertically */
+  }
+
+  .information {
+    text-align: center; /* Center align content */
+  }
+
+  .main-content img {
+    max-width: 100%; /* Ensure images take full width */
+    margin-top: 20px; /* Add margin to top of image */
+  }
+
+  .slideshow {
+    position: relative; /* Ensure slideshow stays within container */
+    max-width: 100%;
+    overflow: hidden; /* Hide overflow */
+  }
+
+  .slideshow img {
+    max-width: 100%; /* Ensure images take full width */
+    display: none; /* Hide images by default */
+  }
+
+  .slideshow img:first-child {
+    display: block; /* Show first image */
+  }
+
+  .btn {
+    margin-top: 20px; /* Add margin to button */
+  }
+}
+
+/* Additional media query for smaller devices (e.g., smartphones) */
+@media (max-width: 480px) {
+  .header img {
+    max-width: 80px; /* Adjust logo size for smaller screens */
+  }
+
+  .navbar {
+    padding: 5px; /* Adjust padding for navigation links */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Adjust font size for navigation links */
+  }
+
+  .information h1 {
+    font-size: 36px; /* Adjust font size for main heading */
+  }
+
+  .information h5 {
+    font-size: 14px; /* Adjust font size for subheading */
+  }
+
+  .slideshow img {
+    margin-top: 10px; /* Adjust margin for images */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+  }
+}
+
+
